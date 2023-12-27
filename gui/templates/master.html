@@ -1,0 +1,30 @@
+{% load static %}
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'master.css' %}">
+
+    {% block css %}
+    {% endblock %}
+
+    <title>Predictor</title>
+</head>
+<body>
+    
+    <div class="sidebar">
+        <form action="{% url 'result' %}" method="post" class="input-form">
+            {%csrf_token%}
+            {{ form }}
+            <button type="submit" class="form-button">Predict</button>
+        </form>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

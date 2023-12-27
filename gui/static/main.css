@@ -1,0 +1,18 @@
+.content {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.section {
+    color: white;
+    text-align: center;
+}
+
+#hello {
+    letter-spacing: 0.2em;
+}

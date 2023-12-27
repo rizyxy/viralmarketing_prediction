@@ -1,0 +1,14 @@
+{% extends 'master.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="section">
+        <h1 class="hello" id="hello">Hello!</h1>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'master.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="section">
+        <h2>Prediction Results :</h2>
+        <h3>{{ prediction }}</h3>
+    </div>
+</div>
+{% endblock %}
